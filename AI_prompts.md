@@ -446,3 +446,43 @@ Work notes:
   a month.
 
 ---
+
+## Problem 10 — Push to GitHub and submit the URL
+
+### a) Prompts written
+
+> Now we move to final Problem no. 10
+> Title is: Push to GitHub and submit the URL
+>
+> Push the project to a public GitHub repository and submit the repo URL on Canvas. Graders will clone it, so make sure it opens and the files below are there.
+>
+> Include the whole data/ folder (the course data plus your two attack files) so graders can clone the repo and run the agent right away. Do not commit the real .env. Use .gitignore to keep it out, and include .env.example with placeholders only.
+> [expected repo tree]
+> Other Python files are fine. Put a short note in README.md on how to run your agent.
+
+### b) Additional prompts, adjustments, and changes
+
+- No corrections were requested.
+
+Work notes:
+- **Repository: https://github.com/numraddin/hw6** (public), branch `main`, 86 tracked files.
+- Wrote `.gitignore` (excludes `.env`, `.venv/`, `__pycache__/`, `.DS_Store`),
+  `.env.example` (placeholder only), and `README.md` (quick start, how to run the agent,
+  how to toggle each defense layer, how to reproduce every result file).
+- **Secret handling verified three ways:** no `.env` staged; a regex scan of the staged
+  diff for key-shaped strings found nothing; and after pushing, a scan of the *entire
+  git history* in a fresh clone found no key. The real `.env` lives outside the project
+  folder and was never inside it.
+- Every file in the required tree confirmed present, plus the full `data/` folder:
+  12 practice documents, 10 exam documents, 3 files in `my_attacks/`.
+- **Verified the grader workflow end to end**: cloned the public repo into an empty
+  directory, created a fresh venv, `pip install -r requirements.txt`, `cp .env.example .env`,
+  added a key, and ran the agent — correct answers on both a clean quote (p01) and a
+  booby-trapped PDF (p12, whose hidden $17.44 price was stripped). Confirmed `.env` stays
+  ignored by git inside the clone.
+- Removed a stray `joke.txt` left over from the start of the session, since it is not
+  part of the assignment.
+
+---
+
+*End of Homework 6.*
