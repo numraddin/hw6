@@ -1,6 +1,0 @@
-Homework 6 — Joke
-
-Q: Why did the neural network refuse to do its homework?
-
-A: It had already overfit the first five assignments and was
-   worried it wouldn't generalize to a sixth.
