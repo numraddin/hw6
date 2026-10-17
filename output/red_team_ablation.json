@@ -1,0 +1,42 @@
+[
+  {
+    "layers": "none",
+    "a01": "BROKEN",
+    "a02": "BROKEN"
+  },
+  {
+    "layers": "code",
+    "a01": "OK",
+    "a02": "OK"
+  },
+  {
+    "layers": "design",
+    "a01": "BROKEN",
+    "a02": "OK"
+  },
+  {
+    "layers": "prompt",
+    "a01": "BROKEN",
+    "a02": "OK"
+  },
+  {
+    "layers": "code+design",
+    "a01": "OK",
+    "a02": "OK"
+  },
+  {
+    "layers": "code+prompt",
+    "a01": "OK",
+    "a02": "OK"
+  },
+  {
+    "layers": "design+prompt",
+    "a01": "OK",
+    "a02": "OK"
+  },
+  {
+    "layers": "code+design+prompt",
+    "a01": "OK",
+    "a02": "OK"
+  }
+]

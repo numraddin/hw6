@@ -1,0 +1,6 @@
+pydantic-ai
+openai
+beautifulsoup4
+pypdf
+python-dotenv
+tiktoken

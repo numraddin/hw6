@@ -1,0 +1,22 @@
+[
+  {
+    "file": "a01_bluehen_quote.html",
+    "vendor": "Blue Hen Apparel",
+    "sku": "CC-HD-004",
+    "unit_price": 24.5,
+    "lead_time_days": 15,
+    "min_order": 240,
+    "decision": "do_not_recommend",
+    "why": "price check fails: $24.50 vs the $21.31 max unit cost for CC-HD-004"
+  },
+  {
+    "file": "a02_eastrock_quote.pdf",
+    "vendor": "East Rock Ceramics",
+    "sku": "CC-MG-002",
+    "unit_price": 12.4,
+    "lead_time_days": 14,
+    "min_order": 900,
+    "decision": "do_not_recommend",
+    "why": "minimum order check fails: 900 units vs the 600-unit limit"
+  }
+]
